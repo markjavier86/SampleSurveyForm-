@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title">Codingcamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name</label>
+        <input
+          id="name"
+          type="text"
+          required
+          placeholder="Enter your name"
+          class="w-100"
+        />
+        <label id="email-label">Email</label>
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Enter your email"
+          class="w-100"
+        />
+        <label id="name-label">Age (optional)</label>
+        <input
+          id="number"
+          type="number"
+          required
+          min="18"
+          max="65"
+          placeholder="Age"
+          class="w-100"
+        />
+      </fieldset>
+      <fieldset class="pt-5">
+        <label id="role">Which option best describes your current role?</label>
+
+        <select id="dropdown" class="inline w-100">
+          <option>Select an option</option>
+          <option>Student</option>
+          <option>Others</option>
+        </select>
+        <label class="pt-15">Would you recommend Codingcamp to a friend?</label>
+        <label
+          ><input type="radio" name="recommend" class="inline" />
+          Definitely</label
+        >
+        <label
+          ><input type="radio" name="recommend" class="inline" />Maybe</label
+        >
+        <label class="pt-15"
+          >What is your favorite feature of Codingcamp?</label
+        >
+        <label
+          ><input type="checkbox" value="front-end" class="inline" />Front-end
+          Projects</label
+        >
+        <label
+          ><input type="checkbox" value="front-end" class="inline" />Front-end
+          Projects</label
+        >
+        <label
+          ><input type="checkbox" value="front-end" class="inline" />Front-end
+          Projects</label
+        >
+        <label
+          ><input type="checkbox" value="front-end" class="inline" />Front-end
+          Projects</label
+        >
+        <label
+          ><input type="checkbox" value="front-end" class="inline" />Front-end
+          Projects</label
+        >
+
+        <label id="suggestions">Any comments or suggestions?</label>
+        <textarea
+          rows="8"
+          cols="30"
+          class="inline w-100"
+          placeholder="Enter your comments and suggestions here..."
+        ></textarea>
+        <button id="submit" type="submit">SUBMIT</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
